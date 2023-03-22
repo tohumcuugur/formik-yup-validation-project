@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  form {
+    width: 40rem;
+    .inputDiv {
+      margin-bottom: 10px;
+    }
+    input,
+    select {
+      width: 100%;
+      padding: 8px 7px;
+      font-size: 16px;
+      border: 2px solid #4a5568;
+      background-color: #2d3748;
+      color: #fff;
+      margin: 5px 0px;
+      outline: none;
+      border-radius: 10px;
+    }
+    input::placeholder {
+      color: lightgray;
+    }
+    input:focus {
+      border-color: lightblue;
+    }
+    .input-error {
+      border-color: #fc8181;
+    }
+    label {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    p {
+      color: #fc8181;
+      font-size: 12px;
+      text-align: left;
+    }
+    button {
+      width: 100%;
+      padding: 8px 8px;
+      margin: 16px 0px;
+      background-color: green;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 20px;
+      border: none;
+    }
+    .checkbox {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      align-items: center;
+      font-size: 1.2rem;
+      input {
+        width: 1.5rem;
+        height: 2rem;
+        border-radius: 2rem !important;
+        padding: 1rem;
+      }
+    }
+    button {
+      margin-bottom: 2rem;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid green;
+      padding: 1rem;
+      border-radius: 2rem;
+      &:hover {
+        background-color: #fff;
+        color: green;
+        border: none;
+      }
+    }
+  }
+}
